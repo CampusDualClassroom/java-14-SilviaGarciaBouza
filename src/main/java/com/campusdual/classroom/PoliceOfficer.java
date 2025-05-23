@@ -8,4 +8,8 @@ public class PoliceOfficer extends Person {
 		super(name, surname);
 		this.squad = squad;
 	}
+	@Override
+	public void getDetails() {
+		System.out.println("Oficial de policia: nombre: "+super.name+", apellido: "+super.surname+", escuadron: "+this.squad);
+	}
 }
